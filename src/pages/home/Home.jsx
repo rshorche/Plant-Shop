@@ -1,14 +1,19 @@
 export default function Home() {
   return (
-    <div className="flex justify-center items-center px-4 sm:px-14">
+    <div className="flex flex-col justify-center items-center px-4 sm:px-14">
       {/* section 1 */}
       <div className="flex gap-4 items-start lg:justify-between w-full overflow-hidden">
         {/* right */}
-        <div>
+        <div className="relative hidden lg:block">
           <img
             src="src/assets/images/home 1.png"
             alt=""
-            className="max-w-md hidden lg:block"
+            className="max-w-md "
+          />
+          <img
+            src="src/assets/images/leaf.png"
+            alt=""
+            className="absolute top-56 -left-20 animate-rotateLeaf"
           />
         </div>
         {/* left */}
@@ -91,6 +96,41 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* section  2 */}
+      <div className="flex flex-wrap md:flex-nowrap items-center lg:justify-evenly gap-4 w-full mt-36">
+        {/* right */}
+        <div className="max-w-md">
+          <div>
+            <h3 className="text-5xl tracking-tighter">
+              ماموریت ما ارائه گیاهان با کیفیت بالا
+            </h3>
+            <p className="mt-5 text-sm">
+              در گلدان، ما علاقه زیادی به گیاهان و آوردن زیبایی طبیعت به خانه و
+              محل کار مردم داریم. فروشگاه گیاهان ما به مدت 12 سال به جامعه
+              پونتیاناج خدمات می دهد و ما به انتخاب گسترده گیاهان با کیفیت بالا
+              و تعهدمان به خدمات عالی به مشتریان افتخار می کنیم.
+            </p>
+          </div>
+          <div className="my-8 max-w-sm">
+            <iframe
+              src="https://www.aparat.com/video/video/embed/videohash/Ijlac/vt/frame"
+              allowFullScreen="true"
+              webkitallowfullscreen="true"
+              width="100%"
+              mozallowfullscreen="true"></iframe>
+          </div>
+          <div>
+            <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base">
+              درباره ما
+            </button>
+          </div>
+        </div>
+        {/* left */}
+        <div className="max-w-sm">
+          <img src="src/assets/images/home 2.png" alt="" />
         </div>
       </div>
     </div>
