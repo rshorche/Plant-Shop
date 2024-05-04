@@ -1,3 +1,5 @@
+import { FaArrowLeftLong } from "react-icons/fa6";
+
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center px-4 sm:px-14">
@@ -131,6 +133,80 @@ export default function Home() {
         {/* left */}
         <div className="max-w-sm">
           <img src="src/assets/images/home 2.png" alt="" />
+        </div>
+      </div>
+
+      {/* section  3 */}
+      <div>
+        <div className="max-w-xl text-center mx-auto">
+          <h3 className="text-5xl">خدمات ما</h3>
+          <p className="text-sm mt-5">
+            در گلدان، ما طیف وسیعی از خدمات را ارائه می دهیم تا به شما کمک کنیم
+            زیبایی گیاهان را به خانه یا محل کار خود بیاورید. خدمات ما شامل نکات
+            و مشاوره های مراقبت از گیاه، تحویل گیاه و نصب گیاه است.
+          </p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-10 mt-12">
+          <div className="bg-cream text-white max-w-80 p-8 rounded-3xl">
+            <img
+              src="src/assets/images/leaves 2.png"
+              alt=""
+              className="w-10 h-10"
+            />
+            <div>
+              <h4 className="text-2xl text-black mt-4 ">اجاره گیاهان</h4>
+              <p className="text-sm text-gray my-5">
+                اگر به دنبال افزودن فضای سبز به محل کار یا رویداد خود هستید،
+                خدمات اجاره گیاه ما راه حل مناسبی است.
+              </p>
+            </div>
+            <button className="text-base text-orange flex items-end gap-2">
+              ادامه مطلب
+              <FaArrowLeftLong />
+            </button>
+          </div>
+          <div className="bg-green text-white max-w-80 p-8 rounded-3xl">
+            <img
+              src="src/assets/images/leaves 1.png"
+              alt=""
+              className="w-10 h-10"
+            />
+            <div>
+              <h4 className="text-2xl mt-4">طراحی سفارشی</h4>
+              <p className="text-sm my-5">
+                ما معتقدیم که گیاهان باید بخشی جدایی ناپذیر از هر فضایی باشند و
+                خدمات طراحی گیاهی سفارشی ما به ما اجازه می دهد تا منحصر به فرد
+                ایجاد کنیم.
+              </p>
+            </div>
+            <button className="text-base flex items-end gap-2">
+              ادامه مطلب
+              <FaArrowLeftLong />
+            </button>
+          </div>
+          <div className="bg-cream text-white max-w-80 p-8 rounded-3xl">
+            <img
+              src="src/assets/images/leaves 2.png"
+              alt=""
+              className="w-10 h-10"
+            />
+            <div>
+              <h4 className="text-2xl text-black mt-4 ">نگهداری از گیاهان</h4>
+              <p className="text-sm text-gray my-5">
+                گیاهان برای سالم ماندن و رشد نیاز به مراقبت و نگهداری منظم دارند
+                و خدمات نگهداری از گیاهان ما تضمین می کند که گیاهان شما...
+              </p>
+            </div>
+            <button className="text-base text-orange flex items-end gap-2">
+              ادامه مطلب
+              <FaArrowLeftLong />
+            </button>
+          </div>
+        </div>
+        <div className="flex justify-center mt-8">
+          <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base">
+            همه خدمات را ببینید
+          </button>
         </div>
       </div>
     </div>
