@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <>
       {/* Mobile Header */}
-      <div className="relative flex justify-between items-center my-6 mx-4 text-sm sm:hidden">
+      <div className="relative flex justify-between items-center my-6 mx-4 text-sm sm:hidden z-10">
         {/* Logo */}
         <a
           href="#"
@@ -58,7 +58,7 @@ export default function Header() {
       </div>
       {/* ********************************************************************** */}
       {/* PC Header */}
-      <div className=" hidden sm:flex justify-between items-center my-6 mx-16 text-xs md:text-sm">
+      <div className=" hidden sm:flex justify-between items-center my-6 mx-16 text-xs md:text-sm z-10">
         {/* Logo */}
         <a
           href="#"
