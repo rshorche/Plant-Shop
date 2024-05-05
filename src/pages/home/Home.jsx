@@ -209,6 +209,68 @@ export default function Home() {
           </button>
         </div>
       </div>
+
+      {/* section  4 */}
+      <div className="flex flex-wrap lg:flex-nowrap items-center lg:justify-evenly gap-8 w-full">
+        {/* right */}
+        <div className="max-w-md mt-10">
+          <img src="src/assets/images/home 3.png" alt="" />
+        </div>
+
+        {/* left */}
+        <div>
+          <div>
+            <h3 className="text-2xl md:text-4xl max-w-lg ">
+              چرا گلدان را به عنوان شریک گیاهان خود انتخاب کنید؟
+            </h3>
+          </div>
+          <div className="my-8">
+            <div className="flex gap-4 items-start">
+              <p className="w-8 h-8 text-center leading-8 rounded-full bg-green text-white">
+                1
+              </p>
+              <div>
+                <h4 className="text-2xl">تجربه و تخصص</h4>
+                <p className="text-sm max-w-md">
+                  تیم ما از علاقه مندان باتجربه گیاهان به همه چیز سبز علاقه مند
+                  است و ما به شما کمک می کنیم تا گیاهان مناسب برای فضای خود را
+                  پیدا کنید.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4 my-6 items-start">
+              <p className="w-8 h-8 text-center leading-8 rounded-full bg-green text-white">
+                2
+              </p>
+              <div>
+                <h4 className="text-2xl"> پایداری </h4>
+                <p className="text-sm max-w-md">
+                  در گلدان ما متعهد به ترویج شیوه های گیاهی پایدار و محافظت از
+                  سیاره خود هستیم.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4 items-start">
+              <p className="w-8 h-8 text-center leading-8 rounded-full bg-green text-white">
+                3
+              </p>
+              <div>
+                <h4 className="text-2xl"> انجمن </h4>
+                <p className="text-sm max-w-md">
+                  ما معتقدیم که گیاهان چیزی بیش از اشیاء تزئینی هستند - آنها
+                  راهی برای ارتباط با طبیعت و ایجاد حس اجتماعی هستند.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base">
+              موارد بیشتر
+            </button>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
