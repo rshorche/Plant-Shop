@@ -356,6 +356,115 @@ export default function Home() {
           </Swiper>
         </div>
       </div>
+
+      {/* section  6 */}
+      <div className="mt-36">
+        {/* top */}
+        <div className="text-center mx-auto max-w-3xl">
+          <h3 className="text-3xl sm:text-5xl">
+            وبلاگ ما را برای الهام سبز کاوش کنید
+          </h3>
+          <p className="text-sm mt-5">
+            وبلاگ ما پر از محتوای آموزنده و الهام بخش در مورد همه چیز سبز است.
+            از نکات و توصیه های مراقبت از گیاهان گرفته تا آخرین روند در باغبانی
+            و طراحی، کارشناسان ما دانش خود را به اشتراک می گذارند تا به شما کمک
+            کنند تا فضاهای داخلی و خارجی خود را زنده کنید.
+          </p>
+        </div>
+
+        {/* bottom */}
+        <div className="mt-12 text-center">
+          <div className="flex flex-wrap items-center justify-between gap-10 text-right">
+            <div>
+              <img src="src/assets/images/Blog/blog1.png" alt="" />
+              <div className="mt-6 mb-3">
+                <span className="bg-green2 text-green3 text-sm px-3 py-[0.4rem] rounded-lg">
+                  مراقبت از گیاه
+                </span>
+                <p className="text-xl mt-2">
+                  اهمیت کیفیت خاک برای رشد گیاه سالم
+                </p>
+              </div>
+              <a
+                href="#"
+                className="flex items-end gap-2 text-base text-orange">
+                ادامه مطلب
+                <FaArrowLeftLong />
+              </a>
+              <div className="flex items-center gap-2">
+                <img
+                  src="src/assets/images/Users/user1.jpeg"
+                  alt=""
+                  className="w-8 h-8 rounded-full"
+                />
+                <div className="text-xs mt-3">
+                  <p>توسط رضا</p>
+                  <p className="text-gray">Feb 25, 2020</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="src/assets/images/Blog/blog1.png" alt="" />
+              <div className="mt-6 mb-3">
+                <span className="bg-green2 text-green3 text-sm px-3 py-[0.4rem] rounded-lg">
+                  مراقبت از گیاه
+                </span>
+                <p className="text-xl mt-2">
+                  اهمیت کیفیت خاک برای رشد گیاه سالم
+                </p>
+              </div>
+              <a
+                href="#"
+                className="flex items-end gap-2 text-base text-orange">
+                ادامه مطلب
+                <FaArrowLeftLong />
+              </a>
+              <div className="flex items-center gap-2">
+                <img
+                  src="src/assets/images/Users/user1.jpeg"
+                  alt=""
+                  className="w-8 h-8 rounded-full"
+                />
+                <div className="text-xs mt-3">
+                  <p>توسط رضا</p>
+                  <p className="text-gray">Feb 25, 2020</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="src/assets/images/Blog/blog1.png" alt="" />
+              <div className="mt-6 mb-3">
+                <span className="bg-green2 text-green3 text-sm px-3 py-[0.4rem] rounded-lg">
+                  مراقبت از گیاه
+                </span>
+                <p className="text-xl mt-2">
+                  اهمیت کیفیت خاک برای رشد گیاه سالم
+                </p>
+              </div>
+              <a
+                href="#"
+                className="flex items-end gap-2 text-base text-orange">
+                ادامه مطلب
+                <FaArrowLeftLong />
+              </a>
+              <div className="flex items-center gap-2">
+                <img
+                  src="src/assets/images/Users/user1.jpeg"
+                  alt=""
+                  className="w-8 h-8 rounded-full"
+                />
+                <div className="text-xs mt-3">
+                  <p>توسط رضا</p>
+                  <p className="text-gray">Feb 25, 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button className="bg-white text-black py-4 px-10 mt-8 rounded-full border text-sm md:text-base">
+            موارد بیشتر
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
