@@ -40,6 +40,9 @@ export default {
         warning: "#FACC15",
         white: "#ffffff",
       },
+      backgroundImage: {
+        bg5: "url('src/assets/images/home 4.png')",
+      },
     },
     plugins: [
       function ({ addVariant }) {
