@@ -1,8 +1,11 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import { Pagination } from "swiper/modules";
+import "swiper/css";
 import "swiper/css/pagination";
+import { useState, useEffect } from "react";
+import supabase from "../../supabase";
+import OurService from "../../components/OurService/OurService";
 
 export default function Home() {
   let commentUsers = [
@@ -19,8 +22,21 @@ export default function Home() {
       img: "src/assets/images/Users/user5.jpeg",
     },
   ];
+
+  const [services, setServices] = useState([]);
+
+  async function fettchu() {
+    let { data, error } = await supabase.from("OurService").select("*");
+    setServices(data);
+    console.log(data, error);
+  }
+
+  useEffect(() => {
+    fettchu();
+  }, []);
+
   return (
-    <div className="flex flex-col justify-center items-center px-4 sm:px-14">
+    <div className="flex flex-col justify-center items-center px-4 sm:px-14 font-Gandom">
       {/* section 1 */}
       <div className="flex gap-4 items-start lg:justify-between w-full overflow-hidden">
         {/* right */}
@@ -164,61 +180,9 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-10 mt-12">
-          <div className="bg-cream text-white max-w-80 p-8 rounded-3xl">
-            <img
-              src="src/assets/images/leaves 2.png"
-              alt=""
-              className="w-10 h-10"
-            />
-            <div>
-              <h4 className="text-2xl text-black mt-4 ">اجاره گیاهان</h4>
-              <p className="text-sm text-gray my-5">
-                اگر به دنبال افزودن فضای سبز به محل کار یا رویداد خود هستید،
-                خدمات اجاره گیاه ما راه حل مناسبی است.
-              </p>
-            </div>
-            <button className="text-base text-orange flex items-end gap-2">
-              ادامه مطلب
-              <FaArrowLeftLong />
-            </button>
-          </div>
-          <div className="bg-green text-white max-w-80 p-8 rounded-3xl">
-            <img
-              src="src/assets/images/leaves 1.png"
-              alt=""
-              className="w-10 h-10"
-            />
-            <div>
-              <h4 className="text-2xl mt-4">طراحی سفارشی</h4>
-              <p className="text-sm my-5">
-                ما معتقدیم که گیاهان باید بخشی جدایی ناپذیر از هر فضایی باشند و
-                خدمات طراحی گیاهی سفارشی ما به ما اجازه می دهد تا منحصر به فرد
-                ایجاد کنیم.
-              </p>
-            </div>
-            <button className="text-base flex items-end gap-2">
-              ادامه مطلب
-              <FaArrowLeftLong />
-            </button>
-          </div>
-          <div className="bg-cream text-white max-w-80 p-8 rounded-3xl">
-            <img
-              src="src/assets/images/leaves 2.png"
-              alt=""
-              className="w-10 h-10"
-            />
-            <div>
-              <h4 className="text-2xl text-black mt-4 ">نگهداری از گیاهان</h4>
-              <p className="text-sm text-gray my-5">
-                گیاهان برای سالم ماندن و رشد نیاز به مراقبت و نگهداری منظم دارند
-                و خدمات نگهداری از گیاهان ما تضمین می کند که گیاهان شما...
-              </p>
-            </div>
-            <button className="text-base text-orange flex items-end gap-2">
-              ادامه مطلب
-              <FaArrowLeftLong />
-            </button>
-          </div>
+          {services.map((service) => (
+            <OurService key={service.id} {...service} />
+          ))}
         </div>
         <div className="flex justify-center mt-8">
           <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base">

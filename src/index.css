@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Nazanin";
+    src: url(src/fonts/Nazanin.woff) format("woff2");
+  }
+  @font-face {
+    font-family: "YeKAN";
+    src: url(src/fonts/YeKAN.woff) format("woff2");
+  }
+  @font-face {
+    font-family: "KoodakBold";
+    src: url(src/fonts/KoodakBold.woff) format("woff2");
+  }
+  @font-face {
+    font-family: "Gandom";
+    src: url(src/fonts/Gandom.woff) format("woff2");
+  }
+}

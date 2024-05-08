@@ -42,8 +42,11 @@ export default {
         green2: "#B8F8AD",
         green3: "#63AC51",
       },
-      backgroundImage: {
-        bg5: "url('src/assets/images/home 4.png')",
+      fontFamily: {
+        Nazanin: "Nazanin",
+        YeKAN: "YeKAN",
+        KoodakBold: "KoodakBold",
+        Gandom: "Gandom",
       },
     },
     plugins: [
