@@ -3,6 +3,7 @@ import Footer from "./parts/Footer/Footer";
 
 import { useRoutes } from "react-router-dom";
 import routes from "./routes";
+import ContactUs from "./parts/ContactUs/ContactUs";
 
 export default function App() {
   const router = useRoutes(routes);
@@ -11,6 +12,7 @@ export default function App() {
     <div className="max-w-[90rem] mx-auto my-0">
       <Header />
       {router}
+      <ContactUs />
       <Footer />
     </div>
   );
