@@ -1,6 +1,8 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
 
+// eslint-disable-next-line react/prop-types
 export default function OurService({ title, description, selected }) {
+  
   return (
     <div
       className={`max-w-80 p-8 rounded-3xl ${
@@ -13,7 +15,7 @@ export default function OurService({ title, description, selected }) {
       />
       <div>
         <h4
-          className={`text-2xl font-bold mt-4 ${
+          className={` text-2xl font-bold mt-4 ${
             selected ? "text-white" : "text-black"
           }`}>
           {title}

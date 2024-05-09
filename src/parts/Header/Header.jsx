@@ -27,7 +27,7 @@ export default function Header() {
           className={`absolute p-4  bg-green top-full w-full  ${
             !showMenu && "hidden"
           } animate-toggleMenu `}>
-          <ul className="child:p-2 child-hover:bg-white">
+          <ul className="*:p-2 *-hover:bg-white">
             <li>
               <a href="#">خانه</a>
             </li>
@@ -46,7 +46,7 @@ export default function Header() {
                 <IoIosArrowDown />
               </a>
               <ul
-                className={`absolute top-[95%] right-0 left-0 bg-green w-full px-4 child-hover:bg-white child:p-2 
+                className={`absolute top-[95%] right-0 left-0 bg-green w-full px-4 *-hover:bg-white *:p-2 
                 ${!showSubMenu && "hidden"}`}>
                 <li className="mb-4">
                   <a href="#">ادامه صفحات</a>
@@ -83,7 +83,7 @@ export default function Header() {
               صفحات
               <IoIosArrowDown />
             </a>
-            <ul className="absolute top-full w-44 p-4 shadow-md rounded  invisible group-hover:visible child:hover:bg-green child:hover:text-white child:p-2 child:rounded">
+            <ul className="absolute top-full w-44 p-4 shadow-md rounded  invisible group-hover:visible *:hover:bg-green *:hover:text-white *:p-2 *:rounded">
               <li>
                 <a href="#">ادامه صفحات</a>
               </li>

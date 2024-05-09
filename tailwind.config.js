@@ -49,11 +49,11 @@ export default {
         Gandom: "Gandom",
       },
     },
-    plugins: [
-      function ({ addVariant }) {
-        addVariant("child", "& > *");
-        addVariant("child-hover", "& > *:hover");
-      },
-    ],
+    // plugins: [
+    //   function ({ addVariant }) {
+    //     addVariant("child", "& > *");
+    //     addVariant("child-hover", "& > *:hover");
+    //   },
+    // ],
   },
 };
