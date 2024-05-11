@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { useState, useEffect } from "react";
 import supabase from "../../supabase";
-import OurService from "../../components/OurService/OurService";
+import ServiceBox from "../../components/ServiceBox/ServiceBox";
 
 export default function Home() {
   let commentUsers = [
@@ -181,7 +181,7 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap justify-center gap-10 mt-12">
           {services.map((service) => (
-            <OurService key={service.id} {...service} />
+            <ServiceBox key={service.id} {...service} />
           ))}
         </div>
         <div className="flex justify-center mt-8">

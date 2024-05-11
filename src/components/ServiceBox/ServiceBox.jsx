@@ -1,8 +1,7 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
 
 // eslint-disable-next-line react/prop-types
-export default function OurService({ title, description, selected }) {
-  
+export default function ServiceBox({ title, description, selected }) {
   return (
     <div
       className={`max-w-80 p-8 rounded-3xl ${

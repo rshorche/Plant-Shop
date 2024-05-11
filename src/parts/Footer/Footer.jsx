@@ -26,7 +26,7 @@ export default function Footer() {
       {/* section 2 */}
       <div className="flex gap-12">
         {/* menu 1 */}
-        <ul className="*:mt-4">
+        <ul className="*:mt-6">
           <span className="text-base text-green">دسترسی سریع</span>
           <li>
             <a href="#">خانه</a>
@@ -45,7 +45,7 @@ export default function Footer() {
           </li>
         </ul>
         {/* menu 2 */}
-        <ul className="*:mt-4">
+        <ul className="*:mt-6">
           <span className="text-base text-green">پشتیبانی</span>
           <li>
             <a href="#">درباره ما</a>
@@ -68,7 +68,7 @@ export default function Footer() {
       {/* section 3 */}
       <div>
         <span className="text-base text-green">در تماس باشید</span>
-        <ul className="*:flex *:items-center *:gap-2 *:mt-8">
+        <ul className="*:flex *:items-center *:gap-2 *:mt-6">
           <li>
             <img src="src/assets/images/Contact-us/map.png" alt="نقشه" />
             <p className="max-w-48">
