@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -6,6 +7,7 @@ import "swiper/css/pagination";
 import { useState, useEffect } from "react";
 import supabase from "../../supabase";
 import ServiceBox from "../../components/ServiceBox/ServiceBox";
+import BlogPostBox from "../../components/BlogPostBox/BlogPostBox";
 
 export default function Home() {
   let commentUsers = [
@@ -24,15 +26,20 @@ export default function Home() {
   ];
 
   const [services, setServices] = useState([]);
+  const [BlogPosts, setBlogPosts] = useState([]);
 
   async function fettchu() {
     let { data, error } = await supabase.from("OurService").select("*");
     setServices(data);
     console.log(data, error);
   }
-
+  async function fetchBloPosts() {
+    let { data, error } = await supabase.from("BlogPost").select("*");
+    setBlogPosts(data);
+  }
   useEffect(() => {
     fettchu();
+    fetchBloPosts();
   }, []);
 
   return (
@@ -338,91 +345,10 @@ export default function Home() {
 
         {/* bottom */}
         <div className="mt-12 text-center">
-          <div className="flex flex-wrap items-center justify-between gap-10 text-right">
-            <div>
-              <img src="src/assets/images/Blog/blog1.png" alt="" />
-              <div className="mt-6 mb-3">
-                <span className="bg-green2 text-green3 text-sm px-3 py-[0.4rem] rounded-lg">
-                  مراقبت از گیاه
-                </span>
-                <p className="text-xl mt-2">
-                  اهمیت کیفیت خاک برای رشد گیاه سالم
-                </p>
-              </div>
-              <a
-                href="#"
-                className="flex items-end gap-2 text-base text-orange">
-                ادامه مطلب
-                <FaArrowLeftLong />
-              </a>
-              <div className="flex items-center gap-2">
-                <img
-                  src="src/assets/images/Users/user1.jpeg"
-                  alt=""
-                  className="w-8 h-8 rounded-full"
-                />
-                <div className="text-xs mt-3">
-                  <p>توسط رضا</p>
-                  <p className="text-gray">Feb 25, 2020</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="src/assets/images/Blog/blog1.png" alt="" />
-              <div className="mt-6 mb-3">
-                <span className="bg-green2 text-green3 text-sm px-3 py-[0.4rem] rounded-lg">
-                  مراقبت از گیاه
-                </span>
-                <p className="text-xl mt-2">
-                  اهمیت کیفیت خاک برای رشد گیاه سالم
-                </p>
-              </div>
-              <a
-                href="#"
-                className="flex items-end gap-2 text-base text-orange">
-                ادامه مطلب
-                <FaArrowLeftLong />
-              </a>
-              <div className="flex items-center gap-2">
-                <img
-                  src="src/assets/images/Users/user1.jpeg"
-                  alt=""
-                  className="w-8 h-8 rounded-full"
-                />
-                <div className="text-xs mt-3">
-                  <p>توسط رضا</p>
-                  <p className="text-gray">Feb 25, 2020</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img src="src/assets/images/Blog/blog1.png" alt="" />
-              <div className="mt-6 mb-3">
-                <span className="bg-green2 text-green3 text-sm px-3 py-[0.4rem] rounded-lg">
-                  مراقبت از گیاه
-                </span>
-                <p className="text-xl mt-2">
-                  اهمیت کیفیت خاک برای رشد گیاه سالم
-                </p>
-              </div>
-              <a
-                href="#"
-                className="flex items-end gap-2 text-base text-orange">
-                ادامه مطلب
-                <FaArrowLeftLong />
-              </a>
-              <div className="flex items-center gap-2">
-                <img
-                  src="src/assets/images/Users/user1.jpeg"
-                  alt=""
-                  className="w-8 h-8 rounded-full"
-                />
-                <div className="text-xs mt-3">
-                  <p>توسط رضا</p>
-                  <p className="text-gray">Feb 25, 2020</p>
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-wrap justify-between gap-10 text-right">
+            {BlogPosts.map((BlogPost) => (
+              <BlogPostBox key={BlogPost.id} {...BlogPost} />
+            ))}
           </div>
           <button className="bg-white text-black py-4 px-10 mt-8 rounded-full border text-sm md:text-base">
             موارد بیشتر
