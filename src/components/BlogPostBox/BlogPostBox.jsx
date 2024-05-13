@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import { FaArrowLeftLong } from "react-icons/fa6";
 
 export default function BlogPostBox({
@@ -10,7 +9,6 @@ export default function BlogPostBox({
   author_Photo,
   created_at,
 }) {
-  console.log(title);
   return (
     <div className="max-w-80">
       <img src={image} alt={title} />

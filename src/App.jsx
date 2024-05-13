@@ -7,7 +7,6 @@ import ContactUs from "./parts/ContactUs/ContactUs";
 
 export default function App() {
   const router = useRoutes(routes);
-
   return (
     <div className="max-w-[90rem] mx-auto my-0">
       <Header />

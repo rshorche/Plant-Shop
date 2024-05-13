@@ -4,42 +4,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { useState, useEffect } from "react";
-import supabase from "../../supabase";
+
+import { useEffect } from "react";
 import ServiceBox from "../../components/ServiceBox/ServiceBox";
 import BlogPostBox from "../../components/BlogPostBox/BlogPostBox";
 
+import { useDispatch, useSelector } from "react-redux";
+import { getPostsFromSupabase } from "../../Redux/store/Posts";
+import { getServicesFromSupabase } from "../../Redux/store/Services";
+import { getCommentsFromSupabase } from "../../Redux/store/Comments";
+
 export default function Home() {
-  let commentUsers = [
-    {
-      id: 1,
-      name: "علی صادقی",
-      desc: "    من عاشق گیاه جدیدم از گلدان هستم! کارکنان در انتخاب گیاه مناسب برای خانه ام بسیار مفید بودند.",
-      img: "src/assets/images/Users/user1.jpeg",
-    },
-    {
-      id: 2,
-      name: "حسن چاقسوند",
-      desc: "    من عاشق گیاه جدیدم از گلدان هستم! کارکنان در انتخاب گیاه مناسب برای خانه ام بسیار مفید بودند.",
-      img: "src/assets/images/Users/user5.jpeg",
-    },
-  ];
-
-  const [services, setServices] = useState([]);
-  const [BlogPosts, setBlogPosts] = useState([]);
-
-  async function fettchu() {
-    let { data, error } = await supabase.from("OurService").select("*");
-    setServices(data);
-    console.log(data, error);
-  }
-  async function fetchBloPosts() {
-    let { data, error } = await supabase.from("BlogPost").select("*");
-    setBlogPosts(data);
-  }
+  const dispath = useDispatch();
+  const posts = useSelector((state) => state.posts);
+  const services = useSelector((state) => state.services);
+  const comments = useSelector((state) => state.Comments);
   useEffect(() => {
-    fettchu();
-    fetchBloPosts();
+    dispath(getPostsFromSupabase());
+    dispath(getServicesFromSupabase());
+    dispath(getCommentsFromSupabase());
   }, []);
 
   return (
@@ -289,7 +272,7 @@ export default function Home() {
             modules={[Pagination]}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}>
-            {commentUsers.map((comment) => {
+            {comments.map((comment) => {
               return (
                 <SwiperSlide key={comment.id}>
                   <div className="flex flex-wrap items-center justify-evenly gap-16 mt-24 mb-20">
@@ -301,7 +284,7 @@ export default function Home() {
                         className="absolute -z-10 md:max-w-md "
                       />
                       <p className="text-xs md:text-2xl max-w-96 ">
-                        {comment.desc}
+                        {comment.description}
                       </p>
                       <img
                         src={comment.img}
@@ -346,8 +329,8 @@ export default function Home() {
         {/* bottom */}
         <div className="mt-12 text-center">
           <div className="flex flex-wrap justify-between gap-10 text-right">
-            {BlogPosts.map((BlogPost) => (
-              <BlogPostBox key={BlogPost.id} {...BlogPost} />
+            {posts.map((post) => (
+              <BlogPostBox key={post.id} {...post} />
             ))}
           </div>
           <button className="bg-white text-black py-4 px-10 mt-8 rounded-full border text-sm md:text-base">
