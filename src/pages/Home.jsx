@@ -1,24 +1,24 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowLeftLong } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
 import { useEffect } from "react";
-import ServiceBox from "../../components/ServiceBox/ServiceBox";
-import BlogPostBox from "../../components/BlogPostBox/BlogPostBox";
+import ServiceBox from "../components/ServiceBox/ServiceBox";
+import BlogPostBox from "../components/BlogPostBox/BlogPostBox";
 
 import { useDispatch, useSelector } from "react-redux";
-import { getPostsFromSupabase } from "../../Redux/store/Posts";
-import { getServicesFromSupabase } from "../../Redux/store/Services";
-import { getCommentsFromSupabase } from "../../Redux/store/Comments";
+import { getPostsFromSupabase } from "../Redux/store/Posts";
+import { getServicesFromSupabase } from "../Redux/store/Services";
+import { getCommentsFromSupabase } from "../Redux/store/Comments";
 
 export default function Home() {
   const dispath = useDispatch();
   const posts = useSelector((state) => state.posts);
   const services = useSelector((state) => state.services);
   const comments = useSelector((state) => state.Comments);
+
   useEffect(() => {
     dispath(getPostsFromSupabase());
     dispath(getServicesFromSupabase());

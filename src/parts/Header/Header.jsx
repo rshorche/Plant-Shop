@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoIosArrowDown, IoMdMenu } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -28,11 +29,17 @@ export default function Header() {
             !showMenu && "hidden"
           } animate-toggleMenu `}>
           <ul className="*:p-2 *-hover:bg-white">
+            <NavLink
+              to={"/"}
+              className={({ isActive }) => (isActive ? "font-bold" : "")}>
+              خانه
+            </NavLink>
             <li>
-              <a href="#">خانه</a>
-            </li>
-            <li>
-              <a href="#">درباره ما</a>
+              <NavLink
+                to={"AboutUs"}
+                className={({ isActive }) => (isActive ? "font-bold" : "")}>
+                درباره ما
+              </NavLink>{" "}
             </li>
             <li>
               <a href="#">خدمات</a>
@@ -69,10 +76,20 @@ export default function Header() {
         {/* Menu */}
         <ul className="relative flex justify-between gap-8 md:gap-12 lg:gap-16 ">
           <li className="font-bold">
-            <a href="#">خانه</a>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                isActive ? "font-bold" : "font-normal"
+              }>
+              خانه
+            </NavLink>
           </li>
           <li>
-            <a href="#">درباره ما</a>
+            <NavLink
+              to={"AboutUs"}
+              className={({ isActive }) => (isActive ? "font-bold" : "")}>
+              درباره ما
+            </NavLink>
           </li>
 
           <li>
