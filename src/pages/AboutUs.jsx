@@ -1,7 +1,28 @@
 import CustomerComments from "../components/CustomerComments/CustomerComments";
 import Path from "../components/Path/Path";
+import TeamUser from "../components/TeamUser/TeamUser";
 
 export default function AboutUs() {
+  const teamDateals = [
+    {
+      id: 1,
+      img: "src/assets/images/Team/user1.png",
+      name: "سجاد زارع",
+      Expertise: "متخصص گیاهان",
+    },
+    {
+      id: 2,
+      img: "src/assets/images/Team/user2.png",
+      name: "مهدی کریمی",
+      Expertise: "متخصص گیاهان",
+    },
+    {
+      id: 3,
+      img: "src/assets/images/Team/user3.png",
+      name: "علی محمدی",
+      Expertise: "متخصص گیاهان",
+    },
+  ];
   return (
     <div className="px-4 sm:px-14">
       <Path />
@@ -95,21 +116,9 @@ export default function AboutUs() {
           </p>
         </div>
         <div className="flex flex-wrap gap-4 mt-10 md:flex-nowrap *:mx-auto text-center">
-          <div>
-            <img src="src/assets/images/Team/user1.png" alt="" />
-            <h4 className="mt-5 mb-2">مهدی کربی </h4>
-            <p>متخصص گیاهان</p>
-          </div>
-          <div>
-            <img src="src/assets/images/Team/user2.png" alt="" />
-            <h4 className="mt-5 mb-2">علی محمدی </h4>
-            <p>متخصص گیاهان</p>
-          </div>
-          <div>
-            <img src="src/assets/images/Team/user3.png" alt="" />
-            <h4 className="mt-5 mb-2">سجاد زارع </h4>
-            <p>متخصص گیاهان</p>
-          </div>
+          {teamDateals.map((teamDatal) => (
+            <TeamUser key={teamDatal.id} {...teamDatal} />
+          ))}
         </div>
         <div className="flex justify-center mt-8">
           <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base md:px-7">
