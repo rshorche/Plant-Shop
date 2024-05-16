@@ -80,7 +80,42 @@ export default function AboutUs() {
         </div>
       </div>
 
-  
+      {/* section 3 */}
+      <div className="mt-20 md:mt-36">
+        <div>
+          <h3 className="text-4xl md:text-5xl text-center">
+            ما چه کسی هستیم: تیم گلدان{" "}
+          </h3>
+          <p className="text-sm max-w-2xl mx-auto mt-5">
+            در گلدان، ما یک تیم اختصاصی از علاقه مندان به گیاهان داریم که مشتاق
+            ارائه بهترین محصولات و خدمات ممکن به مشتریان خود هستند. اعضای تیم ما
+            از پیشینه‌های متنوعی می‌آیند و دانش و تجربه زیادی را روی میز
+            می‌آورند.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-4 mt-10 md:flex-nowrap *:mx-auto text-center">
+          <div>
+            <img src="src/assets/images/Team/user1.png" alt="" />
+            <h4 className="mt-5 mb-2">مهدی کربی </h4>
+            <p>متخصص گیاهان</p>
+          </div>
+          <div>
+            <img src="src/assets/images/Team/user2.png" alt="" />
+            <h4 className="mt-5 mb-2">علی محمدی </h4>
+            <p>متخصص گیاهان</p>
+          </div>
+          <div>
+            <img src="src/assets/images/Team/user3.png" alt="" />
+            <h4 className="mt-5 mb-2">سجاد زارع </h4>
+            <p>متخصص گیاهان</p>
+          </div>
+        </div>
+        <div className="flex justify-center mt-8">
+          <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base md:px-7">
+            همه تیم ما را ببینید
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
