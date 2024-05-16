@@ -6,7 +6,8 @@ export default function Path() {
 
   const pageNames = Object.fromEntries([
     ["/", "خانه"],
-    ["/AboutUs", "درباره ما"],
+    ["/aboutUs", "درباره ما"],
+    ["/OurTeam", "تیم ما"],
   ]);
 
   const activePage = Object.keys(pageNames).filter((page) => page === path)[0];

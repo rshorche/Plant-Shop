@@ -39,7 +39,7 @@ export default function Header() {
                 to={"AboutUs"}
                 className={({ isActive }) => (isActive ? "font-bold" : "")}>
                 درباره ما
-              </NavLink>{" "}
+              </NavLink>
             </li>
             <li>
               <a href="#">خدمات</a>
@@ -56,7 +56,11 @@ export default function Header() {
                 className={`absolute top-[95%] right-0 left-0 bg-green w-full px-4 *-hover:bg-white *:p-2 
                 ${!showSubMenu && "hidden"}`}>
                 <li className="mb-4">
-                  <a href="#">ادامه صفحات</a>
+                  <NavLink
+                    to={"OurTeam"}
+                    className={({ isActive }) => (isActive ? "font-bold" : "")}>
+                    تیم ما
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -102,7 +106,11 @@ export default function Header() {
             </a>
             <ul className="absolute top-full w-44 p-4 shadow-md rounded  invisible group-hover:visible *:hover:bg-green *:hover:text-white *:p-2 *:rounded">
               <li>
-                <a href="#">ادامه صفحات</a>
+                <NavLink
+                  to={"OurTeam"}
+                  className={({ isActive }) => (isActive ? "font-bold" : "")}>
+                  تیم ما
+                </NavLink>
               </li>
             </ul>
           </li>
