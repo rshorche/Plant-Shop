@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getPostsFromSupabase } from "../Redux/store/Posts";
 import { getServicesFromSupabase } from "../Redux/store/Services";
 import { getCommentsFromSupabase } from "../Redux/store/Comments";
+import CustomerComments from "../components/CustomerComments/CustomerComments";
 
 export default function Home() {
   const dispath = useDispatch();
@@ -243,73 +244,7 @@ export default function Home() {
       </div>
 
       {/* section  5 */}
-      <div className="relative mt-20 md:mt-32 max-w-64 md:max-w-xl lg:max-w-[62rem]">
-        {/* top */}
-        <div>
-          <img
-            src="src/assets/images/Branch.png"
-            alt=""
-            className="absolute -top-20 right-0 -z-10"
-          />
-          <img
-            src="src/assets/images/Branch-l.png"
-            alt=""
-            className="absolute -top-20 left-0 -z-10"
-          />
-          <h3 className="text-3xl md:text-5xl text-center">
-            آنچه مشتریان ما می گویند
-          </h3>
-        </div>
-
-        {/* bottom */}
-        <div>
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            pagination={{
-              dynamicBullets: true,
-            }}
-            modules={[Pagination]}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}>
-            {comments.map((comment) => {
-              return (
-                <SwiperSlide key={comment.id}>
-                  <div className="flex flex-wrap items-center justify-evenly gap-16 mt-24 mb-20">
-                    {/* right */}
-                    <div className="flex flex-col justify-center items-center sm:m-10">
-                      <img
-                        src="src/assets/images/home 4.png"
-                        alt=""
-                        className="absolute -z-10 md:max-w-md "
-                      />
-                      <p className="text-xs md:text-2xl max-w-96 ">
-                        {comment.description}
-                      </p>
-                      <img
-                        src={comment.img}
-                        alt=""
-                        className="w-10 h-10 md:w-20 md:h-20 rounded-full"
-                      />
-                      <p className="text-xs md:text-xl"> {comment.name}</p>
-                    </div>
-
-                    {/* left */}
-                    <div>
-                      <iframe
-                        className="rounded-2xl w-full overflow-hidden"
-                        src="https://www.aparat.com/video/video/embed/videohash/Ijlac/vt/frame"
-                        webkitallowfullscreen="true"
-                        width="100%"
-                        mozallowfullscreen="true"></iframe>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
-      </div>
+      <CustomerComments />
 
       {/* section  6 */}
       <div className="mt-36">

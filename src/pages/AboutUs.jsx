@@ -1,3 +1,4 @@
+import CustomerComments from "../components/CustomerComments/CustomerComments";
 import Path from "../components/Path/Path";
 
 export default function AboutUs() {
@@ -116,6 +117,9 @@ export default function AboutUs() {
           </button>
         </div>
       </div>
+
+      {/* section 4 */}
+      <CustomerComments />
     </div>
   );
 }
