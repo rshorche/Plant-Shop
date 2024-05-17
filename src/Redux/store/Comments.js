@@ -16,11 +16,10 @@ const commentsSlice = createSlice({
   reducers: {},
 
   extraReducers: (builder) => {
-    builder.addCase(getCommentsFromSupabase.fulfilled, (state, action) => {
-      console.log("state", state);
-      console.log("action", action.payload);
-      state.push(...action.payload);
-    });
+    builder.addCase(
+      getCommentsFromSupabase.fulfilled,
+      (state, action) => action.payload
+    );
   },
 });
 

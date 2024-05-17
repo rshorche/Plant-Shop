@@ -16,11 +16,10 @@ const postsSlice = createSlice({
   reducers: {},
 
   extraReducers: (builder) => {
-    builder.addCase(getPostsFromSupabase.fulfilled, (state, action) => {
-      console.log("state", state);
-      console.log("action", action.payload);
-      state.push(...action.payload);
-    });
+    builder.addCase(
+      getPostsFromSupabase.fulfilled,
+      (state, action) => action.payload
+    );
   },
 });
 

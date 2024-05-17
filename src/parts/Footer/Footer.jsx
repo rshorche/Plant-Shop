@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex flex-wrap justify-between items-start text-black text-xs mx-6 md:mx-28 my-16 *:mt-8">
+    <div className="flex flex-wrap justify-between items-start text-black text-xs mx-6 md:mx-14 my-16 *:mt-8">
       {/* section 1 */}
       <div>
         {/* Logo */}

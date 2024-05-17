@@ -13,7 +13,7 @@ export default function Blog() {
 
   useEffect(() => {
     dispath(getPostsFromSupabase());
-  }, []);
+  }, [dispath]);
 
   const filterdMenus = posts.filter((post) => {
     if (post.title === activeMenu) {

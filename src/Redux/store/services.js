@@ -16,11 +16,10 @@ const servicesSlice = createSlice({
   reducers: {},
 
   extraReducers: (builder) => {
-    builder.addCase(getServicesFromSupabase.fulfilled, (state, action) => {
-      console.log("state", state);
-      console.log("action", action.payload);
-      state.push(...action.payload);
-    });
+    builder.addCase(
+      getServicesFromSupabase.fulfilled,
+      (state, action) => action.payload
+    );
   },
 });
 
