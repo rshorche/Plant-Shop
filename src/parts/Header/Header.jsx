@@ -45,7 +45,11 @@ export default function Header() {
               <a href="#">خدمات</a>
             </li>
             <li>
-              <a href="#">وبلاگ</a>
+              <NavLink
+                to={"Blog"}
+                className={({ isActive }) => (isActive ? "font-bold" : "")}>
+                وبلاگ
+              </NavLink>
             </li>
             <li onClick={toggleShowSubMenu}>
               <a href="#" className="flex justify-between">
@@ -97,7 +101,14 @@ export default function Header() {
           </li>
 
           <li>
-            <a href="#">وبلاگ</a>
+            <NavLink
+              to={"Blog"}
+              className={({ isActive }) => (isActive ? "font-bold" : "")}>
+              وبلاگ
+            </NavLink>
+          </li>
+          <li>
+            <a href="#">خدمات</a>
           </li>
           <li className="group">
             <a href="#" className="flex gap-1">
@@ -113,9 +124,6 @@ export default function Header() {
                 </NavLink>
               </li>
             </ul>
-          </li>
-          <li>
-            <a href="#">خدمات</a>
           </li>
         </ul>
         {/* Countact us */}
