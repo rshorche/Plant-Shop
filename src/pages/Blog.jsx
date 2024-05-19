@@ -13,7 +13,7 @@ export default function Blog() {
 
   useEffect(() => {
     dispath(getPostsFromSupabase());
-  }, [dispath]);
+  }, []);
 
   const filterdMenus = posts.filter((post) => {
     if (post.title === activeMenu) {
@@ -27,18 +27,19 @@ export default function Blog() {
   return (
     <div className="px-4 sm:px-14">
       <Path />
+
       <div>
         <h2 className="text-center text-4xl md:text-4xl mb-8">وبلاگ گلدان</h2>
 
-        <ul className="flex justify-center gap-4 md:cursor-pointer">
+        <ul className="flex justify-center flex-wrap gap-4 md:cursor-pointer">
           {menus.map((menu) => (
             <li
               key={menu}
               onClick={() => setActiveMenu(menu)}
-              className={`py-4 px-10 rounded-full text-sm md:text-base md:px-7 transition-all ${
+              className={`py-2 md:py-4 px-3 md:px-10 rounded-full text-xs md:text-base transition-all ${
                 menu === activeMenu
                   ? "text-orange border bg-none "
-                  : "bg-white text-black bg-gray/10 border-none"
+                  : "text-black bg-gray/10 border-none"
               }`}>
               {menu}
             </li>
