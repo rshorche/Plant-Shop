@@ -42,7 +42,11 @@ export default function Header() {
               </NavLink>
             </li>
             <li>
-              <a href="#">خدمات</a>
+              <NavLink
+                to={"OurService"}
+                className={({ isActive }) => (isActive ? "font-bold" : "")}>
+                خدمات
+              </NavLink>
             </li>
             <li>
               <NavLink
@@ -108,7 +112,11 @@ export default function Header() {
             </NavLink>
           </li>
           <li>
-            <a href="#">خدمات</a>
+            <NavLink
+              to={"OurService"}
+              className={({ isActive }) => (isActive ? "font-bold" : "")}>
+              خدمات
+            </NavLink>
           </li>
           <li className="group">
             <a href="#" className="flex gap-1">

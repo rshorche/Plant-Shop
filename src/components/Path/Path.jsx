@@ -9,6 +9,7 @@ export default function Path() {
     ["/aboutUs", "درباره ما"],
     ["/OurTeam", "تیم ما"],
     ["/Blog", "وبلاگ"],
+    ["/OurService", "خدمات"],
   ]);
 
   const activePage = Object.keys(pageNames).filter((page) => page === path)[0];
