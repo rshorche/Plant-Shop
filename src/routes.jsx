@@ -5,6 +5,7 @@ import Blog from "./pages/Blog";
 import MainBlog from "./pages/MainBlog";
 import OurService from "./pages/OurService";
 import MainService from "./pages/MainService";
+import ContactUs from "./pages/ContactUs";
 
 export default [
   { path: "/", element: <Home /> },
@@ -14,4 +15,5 @@ export default [
   { path: "/Blog/:BlogID", element: <MainBlog /> },
   { path: "/OurService", element: <OurService /> },
   { path: "/OurService/:serviceID", element: <MainService /> },
+  { path: "/ContactUs", element: <ContactUs /> },
 ];
