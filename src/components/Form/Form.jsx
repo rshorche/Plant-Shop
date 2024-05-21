@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
 import supabase from "../../supabase";
-
 export default function Form() {
   const services = {
     a: "اجاره گیاهان",
@@ -21,31 +20,20 @@ export default function Form() {
   });
 
   const formSubmitin = async (datas) => {
-    try {
-      // Create quiz object
-      const quiz = {
-        firstName: datas.firstName,
-        lastName: datas.lastName,
-        email: datas.email,
-        service: datas.service,
-        questions: datas.textArea, // Assuming textArea is the property for questions
-      };
+    const quiz = {
+      firstName: datas.firstName,
+      lastName: datas.lastName,
+      email: datas.email,
+      service: datas.service,
+      questions: datas.textArea,
+    };
 
-      console.log(quiz); // For debugging
+    const { data, error } = await supabase.from("UserQuestions").insert(quiz);
 
-      // Insert quiz into Supabase
-      const { data, error } = await supabase.from("UserQuestions").insert(quiz);
-
-      if (error) {
-        console.error("Error creating user:", error);
-        // Handle error gracefully, e.g., display an error message to the user
-      } else {
-        console.log("User created:", data);
-        // Handle success, e.g., display a confirmation message or redirect
-      }
-    } catch (error) {
-      console.error("Unexpected error:", error);
-      // Handle unexpected errors
+    if (error) {
+      console.error("Error creating user:", error);
+    } else {
+      console.log("User created:", data);
     }
   };
 
