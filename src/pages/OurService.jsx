@@ -14,7 +14,7 @@ export default function OurService() {
   return (
     <div>
       <Path />
-      <div className="flex justify-center items-center gap-5">
+      <div className="flex justify-center items-center flex-wrap gap-5">
         {services.map((service) => (
           <ServiceBox key={service.id} {...service} />
         ))}

@@ -25,7 +25,7 @@ export default function MainBlog() {
       <div className="my-14 bg-gray/10 px-8 py-2 rounded-full">
         <p className="flex">
           <span className="text-orange"> خانه / وبلاگ </span> /
-          {findPost.description}
+          {findPost && findPost.description}
         </p>
       </div>
 
@@ -39,12 +39,12 @@ export default function MainBlog() {
         </h3>
         <div className="flex gap-2 items-center">
           <img
-            src={`http://localhost:5173/${findPost.author_Photo}`}
+            src={`http://localhost:5173/${findPost && findPost.author_Photo}`}
             alt=""
             className="w-11 h-11 rounded-full"
           />
           <div>
-            <p className="text-base">{findPost.author}</p>
+            <p className="text-base">{findPost && findPost.author}</p>
             <p className="text-xs">همین الان</p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function MainBlog() {
       {/* Body Post */}
       <div className="max-w-2xl mx-auto">
         <img
-          src={`http://localhost:5173/${findPost.image}`}
+          src={`http://localhost:5173/${findPost && findPost.image}`}
           alt=""
           className="w-full max-h-96 min-h-40 my-16"
         />

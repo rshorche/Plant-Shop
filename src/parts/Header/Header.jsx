@@ -19,7 +19,10 @@ export default function Header() {
         <a
           href="#"
           className="flex items-center justify-between gap-2 text-black font-bold">
-          <img src="src/assets/images/Logo/logo.png" alt="logo" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/logo/Logo.png"
+            alt="logo"
+          />
           گلدون
         </a>
         {/* Menu Icon */}
@@ -82,7 +85,10 @@ export default function Header() {
         <a
           href="#"
           className="flex items-center justify-between gap-2 text-black font-bold text-sm md:text-base">
-          <img src="src/assets/images/Logo/logo.png" alt="logo" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/logo/Logo.png"
+            alt="logo"
+          />
           گلدون
         </a>
         {/* Menu */}
