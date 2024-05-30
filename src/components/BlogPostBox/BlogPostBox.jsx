@@ -3,7 +3,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 export default function BlogPostBox({
-  image,
+  cover,
   title,
   description,
   author,
@@ -13,7 +13,10 @@ export default function BlogPostBox({
 }) {
   return (
     <div className="max-w-80">
-      <img src={`http://localhost:5173/${image}`} alt={title} />
+      <img
+        src={`https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/${cover}`}
+        alt={title}
+      />
 
       <div className="mt-6 mb-3">
         <span className="bg-green2 text-green3 text-sm px-3 py-[0.4rem] rounded-lg">
