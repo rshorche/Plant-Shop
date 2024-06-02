@@ -6,7 +6,7 @@ export default function OurTeam() {
     {
       id: 1,
       reverse: false,
-      img: "src/assets/images/Team/user1.png",
+      img: "https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Team/Team_user1.png",
       name: "سجاد زارع",
       Expertise: "متخصص گیاهان",
       description:
@@ -15,7 +15,7 @@ export default function OurTeam() {
     {
       id: 2,
       reverse: true,
-      img: "src/assets/images/Team/user2.png",
+      img: "https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Team/Team_user2.png",
       name: "مهدی کریمی",
       Expertise: "متخصص گیاهان",
       description:
@@ -24,7 +24,7 @@ export default function OurTeam() {
     {
       id: 3,
       reverse: false,
-      img: "src/assets/images/Team/user3.png",
+      img: "https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Team/Team_user3.png",
       name: "علی محمدی",
       Expertise: "متخصص گیاهان",
       description:
@@ -33,7 +33,7 @@ export default function OurTeam() {
     {
       id: 4,
       reverse: true,
-      img: "src/assets/images/Team/user4.png",
+      img: "https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Team/Team_user4.png",
       name: "سعید مشکات",
       Expertise: "متخصص گیاهان",
       description:
@@ -42,7 +42,7 @@ export default function OurTeam() {
     {
       id: 5,
       reverse: false,
-      img: "src/assets/images/Team/user5.png",
+      img: "https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Team/Team_user5.png",
       name: "خسرو توکلی",
       Expertise: "متخصص گیاهان",
       description:

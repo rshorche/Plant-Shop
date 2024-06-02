@@ -7,7 +7,10 @@ export default function Footer() {
         <a
           href="#"
           className="flex items-center gap-2 text-black font-bold text-sm md:text-base">
-          <img src="src/assets/images/Logo/logo.png" alt="logo" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
+            alt="logo"
+          />
           گلدون
         </a>
         {/* Aboute */}
@@ -17,9 +20,18 @@ export default function Footer() {
         </p>
         {/* Social */}
         <div className="flex gap-3">
-          <img src="src/assets/images/Social/Twitter.png" alt="" />
-          <img src="src/assets/images/Social/Facebook.png" alt="" />
-          <img src="src/assets/images/Social/Instagram.png" alt="" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Twitter.png"
+            alt=""
+          />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Facebook.png"
+            alt=""
+          />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Instagram.png"
+            alt=""
+          />
         </div>
       </div>
 
@@ -70,17 +82,26 @@ export default function Footer() {
         <span className="text-base text-green">در تماس باشید</span>
         <ul className="*:flex *:items-center *:gap-2 *:mt-6">
           <li>
-            <img src="src/assets/images/Contact-us/map.png" alt="نقشه" />
+            <img
+              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_map.png"
+              alt="نقشه"
+            />
             <p className="max-w-48">
               123 Anywhere Street, Any City, 12345 ST, Indonesia
             </p>
           </li>
           <li>
-            <img src="src/assets/images/Contact-us/email.png" alt="ایمیل" />
+            <img
+              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_email.png?t=2024-06-02T06%3A36%3A12.055Z"
+              alt="ایمیل"
+            />
             <p>rshorche@gmai.com</p>
           </li>
           <li>
-            <img src="src/assets/images/Contact-us/call.png" alt="تماس" />
+            <img
+              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_call.png"
+              alt="تماس"
+            />
             <p>0937-745-7370</p>
           </li>
         </ul>

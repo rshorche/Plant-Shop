@@ -7,15 +7,24 @@ export default function ContactUs() {
       <Path />
       <div className="flex justify-evenly flex-wrap gap-5 *:flex *:items-center *:gap-2 my-14">
         <div>
-          <img src="src/assets/images/Contact-us/email.png" alt="" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_email.png?t=2024-06-02T06%3A36%3A12.055Z"
+            alt=""
+          />
           <p>rshorche@gmai.com</p>
         </div>{" "}
         <div>
-          <img src="src/assets/images/Contact-us/map.png" alt="" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_map.png"
+            alt=""
+          />
           <p>123 Anywhere Street, Any City, 12345 ST, Indonesia</p>
         </div>
         <div>
-          <img src="src/assets/images/Contact-us/call.png" alt="" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_call.png"
+            alt=""
+          />
           <p>0937-745-7370</p>
         </div>
       </div>

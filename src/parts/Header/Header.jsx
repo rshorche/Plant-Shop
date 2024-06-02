@@ -30,7 +30,7 @@ export default function Header() {
           href="#"
           className="flex items-center justify-between gap-2 text-black font-bold">
           <img
-            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/logo/Logo.png"
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
             alt="logo"
           />
           گلدون
@@ -96,7 +96,7 @@ export default function Header() {
           href="#"
           className="flex items-center justify-between gap-2 text-black font-bold text-sm md:text-base">
           <img
-            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/logo/Logo.png"
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
             alt="logo"
           />
           گلدون

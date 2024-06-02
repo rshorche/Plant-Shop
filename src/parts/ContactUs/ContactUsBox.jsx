@@ -18,27 +18,27 @@ export default function ContactUsBox() {
       </div>
       <div className="hidden lg:block">
         <img
-          src="src/assets/images/bg.png"
+          src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/Bg.png"
           alt=""
           className="absolute left-10 -top-40 max-w-md"
         />
         <img
-          src="src/assets/images/home 5.png"
+          src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/home_5.png"
           alt=""
           className="absolute left-0 -top-52 max-w-md"
         />
         <img
-          src="src/assets/images/wave.png"
+          src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/wave.png"
           alt=""
           className="absolute left-80 bottom-5 "
         />
         <img
-          src="src/assets/images/leaf.png"
+          src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/leaf.png"
           alt=""
           className="absolute left-96 top-44 animate-rotateLeaf "
         />
         <img
-          src="src/assets/images/stary2.png"
+          src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/stary2.png"
           alt=""
           className="absolute left-96 -top-32 "
         />

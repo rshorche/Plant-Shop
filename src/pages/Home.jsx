@@ -28,12 +28,12 @@ export default function Home() {
         {/* right */}
         <div className="relative hidden lg:block">
           <img
-            src="src/assets/images/home 1.png"
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/home_1.png"
             alt=""
             className="max-w-md "
           />
           <img
-            src="src/assets/images/leaf.png"
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/leaf.png"
             alt=""
             className="absolute top-56 -left-20 animate-rotateLeaf"
           />
@@ -67,11 +67,26 @@ export default function Home() {
             <div>
               {/* star */}
               <div className="flex gap-1">
-                <img src="src/assets/images/star.png" alt="star" />
-                <img src="src/assets/images/star.png" alt="star" />
-                <img src="src/assets/images/star.png" alt="star" />
-                <img src="src/assets/images/star.png" alt="star" />
-                <img src="src/assets/images/star.png" alt="star" />
+                <img
+                  src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/star.png"
+                  alt="star"
+                />
+                <img
+                  src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/star.png"
+                  alt="star"
+                />
+                <img
+                  src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/star.png"
+                  alt="star"
+                />
+                <img
+                  src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/star.png"
+                  alt="star"
+                />
+                <img
+                  src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/star.png"
+                  alt="star"
+                />
               </div>
 
               {/* title & description */}
@@ -86,7 +101,7 @@ export default function Home() {
               {/* user */}
               <div className="flex items-center gap-4 mt-3">
                 <img
-                  src="src/assets/images/users/user1.jpeg"
+                  src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Users/Users_user1.jpeg"
                   alt="profile"
                   className="rounded-full w-8 h-8"
                 />
@@ -97,14 +112,14 @@ export default function Home() {
             {/* shopping cart */}
             <div className="relative min-w-64 mt-8">
               <img
-                src="src/assets/images/Featured-Plant.png"
+                src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/Featured-Plant.png"
                 alt=""
                 className="absolute -right-14 -top-20"
               />
 
               <div className="flex items-center bg-cream rounded-2xl">
                 <img
-                  src="src/assets/images/Flowers/Flower-Pots.png"
+                  src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Flowers/Flowers_Flower-Pots.png
                   alt=""
                   className="absolute -left-4 bottom-3 w-40 h-40"
                 />
@@ -151,7 +166,7 @@ export default function Home() {
         </div>
         {/* left */}
         <div className="max-w-sm">
-          <img src="src/assets/images/home 2.png" alt="" />
+          <img src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/home_2.png" alt="" />
         </div>
       </div>
 
@@ -181,7 +196,7 @@ export default function Home() {
       <div className="flex flex-wrap lg:flex-nowrap items-center lg:justify-evenly gap-8 w-full">
         {/* right */}
         <div className="max-w-md mt-10">
-          <img src="src/assets/images/home 3.png" alt="" />
+          <img src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/home_3.png" alt="" />
         </div>
 
         {/* left */}

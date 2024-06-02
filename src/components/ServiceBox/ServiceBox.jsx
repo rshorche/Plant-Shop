@@ -9,11 +9,13 @@ export default function ServiceBox({ title, description, selected, id }) {
         selected ? "bg-green text-white" : "bg-cream text-white "
       }`}>
       <img
-        src={`src/assets/images/${selected ? "leaves 1.png" : "leaves 2.png"}`}
+        src={`https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/${
+          selected ? "leaves_1.png" : "leaves_2.png"
+        }`}
         alt=""
         className="w-10 h-10"
       />
-      
+
       <div>
         <h4
           className={` text-2xl font-bold mt-4 ${

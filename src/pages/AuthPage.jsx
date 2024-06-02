@@ -29,7 +29,7 @@ const AuthPage = () => {
         </div>
         <div className="hidden sm:w-1/2 p-4 md:flex justify-center items-center">
           <img
-            src="src/assets/images/auth.jpg"
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/auth.jpg"
             alt="Auth Banner"
             className="max-w-full h-auto"
           />

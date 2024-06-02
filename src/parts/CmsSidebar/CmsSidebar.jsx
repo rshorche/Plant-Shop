@@ -11,7 +11,7 @@ export default function SideBar() {
       <div className="flex flex-col  px-5 py-5 *:py-2 *:sm:pr-5 *:sm:w-44 *:md:w-56 *:flex *:items-center *:gap-2">
         <div className="mb-10">
           <img
-            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/logo/Logo.png"
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
             alt=""
           />
           <p className="text-xl hidden sm:block">گلدون</p>
