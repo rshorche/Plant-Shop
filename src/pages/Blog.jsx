@@ -16,7 +16,7 @@ export default function Blog() {
   }, []);
 
   const filterdMenus = posts.filter((post) => {
-    if (post.title === activeMenu) {
+    if (post.category === activeMenu) {
       return post;
     }
     if (activeMenu === "همه") {

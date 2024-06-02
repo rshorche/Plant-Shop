@@ -1,18 +1,35 @@
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import MyUploadAdapter from "../../components/UploadAdapter/UploadAdapter";
+import supabase from "../../supabase";
 
-export default function Ckeditor({ value, setValue }) {
+const Ckeditor = ({ value, setValue }) => {
+  const editorConfiguration = {
+    extraPlugins: [MyCustomUploadAdapterPlugin],
+  };
+
+  function MyCustomUploadAdapterPlugin(editor) {
+    editor.plugins.get("FileRepository").createUploadAdapter = (loader) => {
+      return new MyUploadAdapter(loader, supabase);
+    };
+  }
+
   return (
-    <div>
-      <CKEditor
-        editor={ClassicEditor}
-        data={value}
-        onChange={(event, editor) => {
-          const data = editor.getData();
-          setValue(data);
-          console.log(data);
-        }}
-      />
-    </div>
+    <CKEditor
+      editor={ClassicEditor}
+      config={editorConfiguration}
+      data={value}
+      onChange={(event, editor) => {
+        const data = editor.getData();
+        setValue(data);
+      }}
+      onReady={(editor) => {
+        editor.plugins.get("FileRepository").createUploadAdapter = (loader) => {
+          return new MyUploadAdapter(loader, supabase);
+        };
+      }}
+    />
   );
-}
+};
+
+export default Ckeditor;

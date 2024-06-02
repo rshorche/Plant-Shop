@@ -1,3 +1,4 @@
+// src/pages/Cms/BlogPostEditor.jsx
 import { useState } from "react";
 import Ckeditor from "../../components/Ckeditor/Ckeditor";
 import Uploader from "../../components/Uploader/Uploader";
@@ -15,22 +16,27 @@ export default function BlogPostEditor() {
       cover: "",
       description: "",
       articleBody: "",
+      category: "",
     },
   });
 
   const formSubmitin = async (datas) => {
     const today = new Date();
     const options = { year: "numeric", month: "long", day: "numeric" };
-    const formattedDate = today.toLocaleDateString("fa-IR", options); // تاریخ را به فارسی فرمت می کند
+    const formattedDate = today.toLocaleDateString("fa-IR", options);
+
+    console.log(datas);
 
     const article = {
       author: datas.author,
       title: datas.title,
-      cover: cover.fullPath,
+      cover: `https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/${cover}`,
       description: datas.description,
       articleBody: articleBody,
-      author_Photo: cover.fullPath,
+      author_Photo:
+        "https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/user1.jpeg",
       created_at: formattedDate,
+      category: datas.category,
     };
     console.log(article);
 
@@ -88,14 +94,37 @@ export default function BlogPostEditor() {
         </div>
 
         <div className="w-full sm:w-1/2 flex flex-col">
+          <label className="text-base m-2" htmlFor="category">
+            خدمات
+          </label>
+          <select
+            className="border rounded-full px-8 py-4 m-2"
+            id="category"
+            {...register("category")}
+            defaultValue="زندگی سبز">
+            <option className="py-4 px-8 " value="زندگی سبز">
+              زندگی سبز
+            </option>
+            <option className="py-4 px-8 " value="مراقبت از گیاه">
+              مراقبت از گیاه
+            </option>
+            <option className="py-4 px-8 " value="طراحی و دکور">
+              طراحی و دکور
+            </option>
+          </select>
+        </div>
+
+        <div className="w-full sm:w-1/2 flex flex-col">
           <label className="text-base m-2" htmlFor="description">
             تصویر کاور پست
           </label>
           <Uploader setValue={setCover} />
         </div>
+
         <div className="w-full flex flex-col m-4">
           <Ckeditor value={articleBody} setValue={setArticleBody} />
         </div>
+
         <div className="flex flex-col">
           <input
             type="submit"

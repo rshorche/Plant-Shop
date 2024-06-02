@@ -1,16 +1,26 @@
 import { useState } from "react";
 import { IoIosArrowDown, IoMdMenu } from "react-icons/io";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const [showSubMenu, setShowSubMenu] = useState(false);
+  const userId = JSON.parse(
+    localStorage.getItem("sb-qsuxfyptieudendefeog-auth-token")
+  ).user.email;
   function toggleShowMenu() {
     setShowMenu((prevIsShow) => !prevIsShow);
   }
   function toggleShowSubMenu() {
     setShowSubMenu((prevIsShow) => !prevIsShow);
   }
+  const myItem = localStorage.getItem("sb-qsuxfyptieudendefeog-auth-token");
+  if (myItem) {
+    console.log(myItem.access_token); // مقدار آیتم را چاپ کنید
+  } else {
+    console.log('آیتم "myItem" در localStorage یافت نشد.');
+  }
+
   return (
     <>
       {/* Mobile Header */}
@@ -141,9 +151,19 @@ export default function Header() {
           </li>
         </ul>
         {/* Countact us */}
-        <button className="bg-green text-white py-4 px-7 rounded-full text-sm md:text-base md:px-7">
-          ارتباط با ما
-        </button>
+        {userId ? (
+          <Link
+            to={"cms"}
+            className="bg-green text-white py-4 px-7 rounded-full text-sm md:text-base md:px-7">
+            {userId.replace(/@.*/, "")}
+          </Link>
+        ) : (
+          <Link
+            to={"auth"}
+            className="bg-green text-white py-4 px-7 rounded-full text-sm md:text-base md:px-7">
+            ورود / ثبت نام
+          </Link>
+        )}
       </div>
     </>
   );

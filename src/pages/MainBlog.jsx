@@ -39,7 +39,7 @@ export default function MainBlog() {
         </h3>
         <div className="flex gap-2 items-center">
           <img
-            src={`http://localhost:5173/${findPost && findPost.author_Photo}`}
+            src={`${findPost && findPost.author_Photo}`}
             alt=""
             className="w-11 h-11 rounded-full"
           />
@@ -52,24 +52,7 @@ export default function MainBlog() {
 
       {/* Body Post */}
       <div className="max-w-2xl mx-auto">
-        <img
-          src={`http://localhost:5173/${findPost && findPost.image}`}
-          alt=""
-          className="w-full max-h-96 min-h-40 my-16"
-        />
-        <h3>در دفتر خانه خود برای افزایش بهره</h3>
-        <p>
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-          متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
-          درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با
-          نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
-          خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
-          داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به
-          پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی
-          سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-        </p>
+        <div dangerouslySetInnerHTML={{ __html: `${findPost?.articleBody}` }} />
 
         {/* Share */}
         <div className="my-10">

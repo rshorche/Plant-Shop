@@ -18,6 +18,7 @@ export default function Uploader({ setValue }) {
     setSelectedImage(file);
     setImageName(file.name);
   }
+
   async function handleUpload() {
     if (!selectedImage) {
       setUploadError("لطفا یک عکس انتخاب کنید!");
@@ -25,20 +26,21 @@ export default function Uploader({ setValue }) {
     }
 
     setUploading(true);
-    setUploadError(null); // Clear any previous errors
+    setUploadError(null);
 
     try {
       const { data, error } = await supabase.storage
         .from("images")
-        .upload(`${imageName}`, selectedImage);
-      console.log(data);
-      setValue(data);
+        .upload(`public/${imageName}`, selectedImage);
       if (error) {
         throw error;
       }
+      console.log("Uploaded data:", data);
+      setValue(data.fullPath);
+
       console.log("عکس با موفقیت آپلود شد");
     } catch (error) {
-      console.log(error);
+      console.error(error);
       setUploadError("خطا از سرور یا عکسی با همین نام از قبل وجود دارد");
     } finally {
       setUploading(false);
@@ -48,14 +50,11 @@ export default function Uploader({ setValue }) {
   return (
     <div className="flex flex-col gap-5">
       <input type="file" onChange={handleImageChange} />
-      {/* {selectedImage && (
-        <img src={URL.createObjectURL(selectedImage)} alt="Preview" />
-      )} */}
       <button
         onClick={handleUpload}
         disabled={uploading}
         className="bg-orange text-white py-4 px-8 rounded-full text-sm md:text-base md:px-7">
-        {uploading ? "در حال آپلود..." :`آپلود کن`}
+        {uploading ? "در حال آپلود..." : "آپلود کن"}
       </button>
       {uploadError && <p style={{ color: "red" }}>{uploadError}</p>}
     </div>
