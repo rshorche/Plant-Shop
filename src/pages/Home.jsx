@@ -119,7 +119,7 @@ export default function Home() {
 
               <div className="flex items-center bg-cream rounded-2xl">
                 <img
-                  src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Flowers/Flowers_Flower-Pots.png
+                  src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Flowers/Flowers_Flower-Pots.png"
                   alt=""
                   className="absolute -left-4 bottom-3 w-40 h-40"
                 />
@@ -166,7 +166,10 @@ export default function Home() {
         </div>
         {/* left */}
         <div className="max-w-sm">
-          <img src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/home_2.png" alt="" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/home_2.png"
+            alt=""
+          />
         </div>
       </div>
 
@@ -196,7 +199,10 @@ export default function Home() {
       <div className="flex flex-wrap lg:flex-nowrap items-center lg:justify-evenly gap-8 w-full">
         {/* right */}
         <div className="max-w-md mt-10">
-          <img src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/home_3.png" alt="" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/home_3.png"
+            alt=""
+          />
         </div>
 
         {/* left */}

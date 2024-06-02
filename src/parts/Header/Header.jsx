@@ -7,7 +7,7 @@ export default function Header() {
   const [showSubMenu, setShowSubMenu] = useState(false);
   const userId = JSON.parse(
     localStorage.getItem("sb-qsuxfyptieudendefeog-auth-token")
-  ).user.email;
+  )?.user.email;
   function toggleShowMenu() {
     setShowMenu((prevIsShow) => !prevIsShow);
   }

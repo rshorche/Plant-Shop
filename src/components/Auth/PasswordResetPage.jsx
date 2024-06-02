@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import supabase from "../supabase";
+import supabase from "../../supabase";
 
 const PasswordResetPage = () => {
   const {

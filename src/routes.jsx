@@ -12,8 +12,8 @@ import CmsHome from "./pages/Cms/CmsHome";
 import BlogPostEditor from "./pages/Cms/BlogPostEditor";
 import Privete from "./pages/Cms/Privete";
 import AuthPage from "./pages/AuthPage";
-import PasswordResetPage from "./pages/PasswordResetPage";
-import PasswordResetForm from "./pages/PasswordResetForm";
+import PasswordResetPage from "./components/Auth/PasswordResetPage";
+import PasswordResetForm from "./components/Auth/PasswordResetForm";
 import NotFound from "./pages/NotFound";
 
 export default [

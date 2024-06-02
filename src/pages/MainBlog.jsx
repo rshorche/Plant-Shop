@@ -64,7 +64,7 @@ export default function MainBlog() {
               className="w-9 h-9"
             />
             <img
-              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Facebook.png
+              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Facebook.png"
               alt=""
               className="w-9 h-9"
             />
