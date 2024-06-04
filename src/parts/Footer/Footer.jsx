@@ -1,18 +1,20 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <div className="flex flex-wrap justify-between items-start text-black text-xs mx-6 md:mx-14 my-16 *:mt-8">
       {/* section 1 */}
       <div>
         {/* Logo */}
-        <a
-          href="#"
+        <Link
+          to={"/"}
           className="flex items-center gap-2 text-black font-bold text-sm md:text-base">
           <img
             src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
             alt="logo"
           />
           گلدون
-        </a>
+        </Link>
         {/* Aboute */}
         <p className="max-w-72 my-8 text-sm text-gray">
           در گلدون , ما نسبت به گیاهان شور و شوق داریم و زیبایی طبیعت را به
@@ -41,38 +43,38 @@ export default function Footer() {
         <ul className="*:mt-6">
           <span className="text-base text-green">دسترسی سریع</span>
           <li>
-            <a href="#">خانه</a>
+            <Link to={"/"}>خانه</Link>
           </li>
           <li>
-            <a href="#">فروشگاه</a>
+            <Link to={"OurService"}>فروشگاه</Link>
           </li>
           <li>
-            <a href="#">خدمات</a>
+            <Link to={"OurService"}>خدمات</Link>
           </li>
           <li>
-            <a href="#">وبلاگ</a>
+            <Link to={"blog"}>وبلاگ</Link>
           </li>
           <li>
-            <a href="#">سبد خرید</a>
+            <Link to={"cms"}>سبد خرید</Link>
           </li>
         </ul>
         {/* menu 2 */}
         <ul className="*:mt-6">
           <span className="text-base text-green">پشتیبانی</span>
           <li>
-            <a href="#">درباره ما</a>
+            <Link to={"AboutUs"}>درباره ما</Link>
           </li>
           <li>
-            <a href="#">ارتباط با ما</a>
+            <Link to={"/OurService/2"}>ارتباط با ما</Link>
           </li>
           <li>
-            <a href="#">سوالات متداول</a>
+            <Link to={"faq"}>سوالات متداول</Link>
           </li>
           <li>
-            <a href="#">شرایط و ضوابط</a>
+            <Link to={"faq"}>شرایط و ضوابط</Link>
           </li>
           <li>
-            <a href="#">سیاست حفظ حریم خصوصی</a>
+            <Link to={"faq"}>سیاست حفظ حریم خصوصی</Link>
           </li>
         </ul>
       </div>

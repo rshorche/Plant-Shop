@@ -24,18 +24,19 @@ export default function MainBlog() {
       {/* Path */}
       <div className="my-14 bg-gray/10 px-8 py-2 rounded-full">
         <p className="flex">
-          <span className="text-orange"> خانه / وبلاگ </span> /
-          {findPost && findPost.description}
+          <span className="text-orange"> خانه / وبلاگ &nbsp; </span>{" "}
+          /&nbsp;&nbsp;
+          {findPost && findPost.title}
         </p>
       </div>
 
       {/* Header Post */}
       <div className="flex flex-col items-center">
         <span className="bg-green2/30 text-green3 text-sm px-3 py-[0.4rem] rounded-lg">
-          زندگی سبز
+          {findPost && findPost.category}
         </span>
         <h3 className="text-4xl md:text-6xl max-w-2xl mt-4 mb-6 text-center">
-          چگونه گیاهان را در دفتر خانه خود برای افزایش بهره وری بگنجانید
+          {findPost && findPost.title}
         </h3>
         <div className="flex gap-2 items-center">
           <img
@@ -57,7 +58,7 @@ export default function MainBlog() {
         {/* Share */}
         <div className="my-10">
           <span>اشتراک گذاری</span>
-          <div className="flex gap-2">
+          <div className="flex gap-2 mt-2">
             <img
               src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Instagram.png"
               alt=""

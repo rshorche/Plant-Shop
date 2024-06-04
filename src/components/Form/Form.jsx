@@ -27,7 +27,6 @@ export default function Form() {
       service: datas.service,
       questions: datas.textArea,
     };
-
     const { data, error } = await supabase.from("UserQuestions").insert(quiz);
 
     if (error) {
@@ -36,6 +35,7 @@ export default function Form() {
       console.log("User created:", data);
     }
   };
+  console.log(formSubmitin);
 
   return (
     <div className="my-10">

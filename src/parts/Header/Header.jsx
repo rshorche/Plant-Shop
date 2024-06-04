@@ -24,17 +24,17 @@ export default function Header() {
   return (
     <>
       {/* Mobile Header */}
-      <div className="relative flex justify-between items-center my-6 mx-4 text-sm sm:hidden z-10">
+      <div className="relative flex justify-between items-center my-6 mx-4 text-sm sm:hidden z-50">
         {/* Logo */}
-        <a
-          href="#"
+        <Link
+          to={"/"}
           className="flex items-center justify-between gap-2 text-black font-bold">
           <img
             src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
             alt="logo"
           />
           گلدون
-        </a>
+        </Link>
         {/* Menu Icon */}
         <IoMdMenu className="w-8 h-8" onClick={toggleShowMenu} />
         <div
@@ -83,6 +83,13 @@ export default function Header() {
                     تیم ما
                   </NavLink>
                 </li>
+                <li className="mb-4">
+                  <NavLink
+                    to={"faq"}
+                    className={({ isActive }) => (isActive ? "font-bold" : "")}>
+                    سوالات متداول
+                  </NavLink>
+                </li>
               </ul>
             </li>
           </ul>
@@ -90,17 +97,17 @@ export default function Header() {
       </div>
       {/* ********************************************************************** */}
       {/* PC Header */}
-      <div className=" hidden sm:flex justify-between items-center my-6 mx-16 text-xs md:text-sm z-10">
+      <div className=" hidden sm:flex justify-between items-center my-6 mx-16 text-xs md:text-sm z-50">
         {/* Logo */}
-        <a
-          href="#"
+        <Link
+          to={"/"}
           className="flex items-center justify-between gap-2 text-black font-bold text-sm md:text-base">
           <img
             src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
             alt="logo"
           />
           گلدون
-        </a>
+        </Link>
         {/* Menu */}
         <ul className="relative flex justify-between gap-8 md:gap-12 lg:gap-16 ">
           <li className="font-bold">
@@ -139,12 +146,19 @@ export default function Header() {
               صفحات
               <IoIosArrowDown />
             </a>
-            <ul className="absolute top-full w-44 p-4 shadow-md rounded  invisible group-hover:visible *:hover:bg-green *:hover:text-white *:p-2 *:rounded">
-              <li>
+            <ul className="absolute bg-white top-full w-44 p-4 shadow-md rounded  invisible group-hover:visible  *:p-2 *:rounded">
+              <li className="mb-4 hover:bg-green hover:text-white">
                 <NavLink
                   to={"OurTeam"}
                   className={({ isActive }) => (isActive ? "font-bold" : "")}>
                   تیم ما
+                </NavLink>
+              </li>
+              <li className="mb-4 hover:bg-green hover:text-white">
+                <NavLink
+                  to={"faq"}
+                  className={({ isActive }) => (isActive ? "font-bold" : "")}>
+                  سوالات متداول
                 </NavLink>
               </li>
             </ul>

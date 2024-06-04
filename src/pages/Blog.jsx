@@ -4,6 +4,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { getPostsFromSupabase } from "../Redux/store/Posts";
 import { useDispatch, useSelector } from "react-redux";
 import BlogPostBox from "../components/BlogPostBox/BlogPostBox";
+import { Link } from "react-router-dom";
 
 export default function Blog() {
   const [activeMenu, setActiveMenu] = useState("همه");
@@ -48,7 +49,10 @@ export default function Blog() {
 
         <div className="flex lg:justify-center flex-wrap  gap-8 mt-16">
           <div>
-            <img src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Blog/Blog_blog1.png" alt="" />
+            <img
+              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Blog/Blog_blog1.png"
+              alt=""
+            />
           </div>
 
           <div className="max-w-lg">
@@ -65,14 +69,16 @@ export default function Blog() {
               دهند که می تواند سلامت جسمی و روانی شما را بهبود بخشد.
             </p>
 
-            <button className="text-base flex items-end gap-2 text-orange my-5">
-              ادامه مطلب
-              <FaArrowLeftLong />
-            </button>
+            <Link to={"49"}>
+              <button className="text-base flex items-end gap-2 text-orange my-5">
+                ادامه مطلب
+                <FaArrowLeftLong />
+              </button>
+            </Link>
 
             <div className="flex items-center gap-2">
               <img
-                src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Blog/Blog_blog1.png"
+                src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Users/Users_user2.jpeg"
                 alt=""
                 className="w-12 h-12 rounded-full"
               />

@@ -1,4 +1,3 @@
-// src/plugins/UploadAdapter.js
 export default class UploadAdapter {
   constructor(loader, supabase) {
     this.loader = loader;

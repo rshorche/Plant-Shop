@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CustomerComments from "../components/CustomerComments/CustomerComments";
 import Path from "../components/Path/Path";
 import TeamUser from "../components/TeamUser/TeamUser";
@@ -29,7 +30,11 @@ export default function AboutUs() {
       {/* section 1 */}
       <div className="flex flex-wrap lg:flex-nowrap justify-between gap-8 mt-28">
         <div className="max-w-lg md:min-w-96">
-          <img src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/AboutUs/aboutUs1.png" alt="" className="w-full" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/AboutUs/aboutUs1.png"
+            alt=""
+            className="w-full"
+          />
         </div>
 
         <div className="max-w-lg">
@@ -67,10 +72,10 @@ export default function AboutUs() {
 
           <div className="flex flex-wrap gap-4 mt-8">
             <button className="bg-orange text-white py-4 px-10 rounded-full text-sm md:text-base md:px-7">
-              اکنون خرید کنید
+              <Link to={"/OurService/1"}>اکنون خرید کنید</Link>
             </button>
             <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base md:px-7">
-              خدمات ما
+              <Link to={"/OurService/1"}>خدمات ما</Link>
             </button>
           </div>
         </div>
@@ -90,14 +95,17 @@ export default function AboutUs() {
           </p>
         </div>
         <div>
-          <img src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/AboutUs/aboutUs2.png" alt="" />
+          <img
+            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/AboutUs/aboutUs2.png"
+            alt=""
+          />
         </div>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <button className="bg-orange text-white py-4 px-10 rounded-full text-sm md:text-base md:px-7">
-            اکنون خرید کنید
+            <Link to={"/OurService/1"}>اکنون خرید کنید</Link>
           </button>
           <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base md:px-7">
-            خدمات ما
+            <Link to={"/OurService/1"}>خدمات ما</Link>
           </button>
         </div>
       </div>
@@ -122,7 +130,7 @@ export default function AboutUs() {
         </div>
         <div className="flex justify-center mt-8">
           <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base md:px-7">
-            همه تیم ما را ببینید
+            <Link to={"/OurTeam"}>همه تیم ما را ببینید</Link>
           </button>
         </div>
       </div>

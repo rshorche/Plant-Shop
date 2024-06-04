@@ -8,6 +8,7 @@ import { getPostsFromSupabase } from "../Redux/store/Posts";
 import { getServicesFromSupabase } from "../Redux/store/Services";
 import { getCommentsFromSupabase } from "../Redux/store/Comments";
 import CustomerComments from "../components/CustomerComments/CustomerComments";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const dispath = useDispatch();
@@ -53,10 +54,10 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4 text-base mt-6">
               <button className="bg-orange text-white py-4 px-10 rounded-full text-sm md:text-base md:px-7">
-                درباه ما
+                <Link to={"AboutUs"}>درباه ما</Link>
               </button>
               <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base md:px-7">
-                بیشتر بدانید
+                <Link to={"faq"}>بیشتر بدانید</Link>
               </button>
             </div>
           </div>
@@ -127,7 +128,7 @@ export default function Home() {
                   <h4>گیاه ریحان تازه</h4>
                   <p>120,000 تومان</p>
                   <button className="bg-orange text-white py-1 px-4 rounded-full text-sm ">
-                    توضیحات
+                    <Link to={"OurService"}>توضیحات</Link>
                   </button>
                 </div>
               </div>
@@ -160,7 +161,7 @@ export default function Home() {
           </div>
           <div>
             <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base">
-              درباره ما
+              <Link to={"OurTeam"}>درباره ما</Link>
             </button>
           </div>
         </div>
@@ -190,7 +191,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center mt-8">
           <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base">
-            همه خدمات را ببینید
+            <Link to={"OurService"}>همه خدمات را ببینید</Link>
           </button>
         </div>
       </div>
@@ -253,7 +254,7 @@ export default function Home() {
           </div>
           <div>
             <button className="bg-white text-black py-4 px-10 rounded-full border text-sm md:text-base">
-              موارد بیشتر
+              <Link to={"faq"}>موارد بیشتر</Link>
             </button>
           </div>
         </div>
@@ -285,7 +286,7 @@ export default function Home() {
             ))}
           </div>
           <button className="bg-white text-black py-4 px-10 mt-8 rounded-full border text-sm md:text-base">
-            موارد بیشتر
+            <Link to={"Blog"}>موارد بیشتر</Link>
           </button>
         </div>
       </div>

@@ -7,7 +7,12 @@ import routes from "./routes";
 export default function App() {
   const router = useRoutes(routes);
   const location = useLocation().pathname;
-  const adminPanel = ["/cms", "/cms/blogPostEditor"];
+  const adminPanel = [
+    "/cms",
+    "/cms/blogPostEditor",
+    "/cms/ServiceRequest",
+    "/cms/UserManagement",
+  ];
   const isOnAdminPanel = adminPanel.includes(location);
 
   return (

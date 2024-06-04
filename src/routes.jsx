@@ -15,6 +15,8 @@ import AuthPage from "./pages/AuthPage";
 import PasswordResetPage from "./components/Auth/PasswordResetPage";
 import PasswordResetForm from "./components/Auth/PasswordResetForm";
 import NotFound from "./pages/NotFound";
+import ServiceRequest from "./pages/Cms/ServiceRequest";
+import UserList from "./pages/Cms/UserList";
 
 export default [
   { path: "/", element: <Home /> },
@@ -36,7 +38,11 @@ export default [
         <CmsHome />
       </Privete>
     ),
-    children: [{ path: "blogPostEditor", element: <BlogPostEditor /> }],
+    children: [
+      { path: "blogPostEditor", element: <BlogPostEditor /> },
+      { path: "ServiceRequest", element: <ServiceRequest /> },
+      { path: "UserManagement", element: <UserList /> },
+    ],
   },
   { path: "*", element: <NotFound /> },
 ];

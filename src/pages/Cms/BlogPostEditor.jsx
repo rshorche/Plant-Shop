@@ -34,7 +34,7 @@ export default function BlogPostEditor() {
       description: datas.description,
       articleBody: articleBody,
       author_Photo:
-        "https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/user1.jpeg",
+        "https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Users/Users_user5.jpeg",
       created_at: formattedDate,
       category: datas.category,
     };

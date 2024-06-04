@@ -14,13 +14,15 @@ export default function MainService() {
   useEffect(() => {
     dispath(getServicesFromSupabase());
   }, []);
+  
 
   return (
     <div className="px-4 sm:px-14">
       {/* Path */}
       <div className="my-14 bg-gray/10 px-8 py-2 rounded-full">
         <p className="flex">
-          <span className="text-orange"> خانه / وبلاگ </span> /
+          <span className="text-orange"> خانه / وبلاگ &nbsp; </span>{" "}
+          /&nbsp;&nbsp;
           {findService && findService.title}
         </p>
       </div>
