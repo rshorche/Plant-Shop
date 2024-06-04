@@ -20,3 +20,16 @@
     src: url(src/fonts/Gandom.woff) format("woff2");
   }
 }
+
+a {
+  @apply transition-shadow duration-300 ease-in-out;
+}
+
+/* استایل پیش فرض برای دکمه‌ها */
+button {
+  @apply transition-shadow duration-300 ease-in-out;
+}
+
+button:hover {
+  @apply shadow-lg;
+}
