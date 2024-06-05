@@ -5,7 +5,7 @@ import BlogPostBox from "../components/BlogPostBox/BlogPostBox";
 
 import { useDispatch, useSelector } from "react-redux";
 import { getPostsFromSupabase } from "../Redux/store/Posts";
-import { getServicesFromSupabase } from "../Redux/store/Services";
+import { getServicesFromSupabase } from "../Redux/store/services";
 import { getCommentsFromSupabase } from "../Redux/store/Comments";
 import CustomerComments from "../components/CustomerComments/CustomerComments";
 import { Link } from "react-router-dom";

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { getServicesFromSupabase } from "../Redux/store/Services";
+import { getServicesFromSupabase } from "../Redux/store/services";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Form from "../components/Form/Form";
 
