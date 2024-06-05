@@ -4,10 +4,10 @@ import supabase from "../../supabase";
 export const getUsersFromSupabase = createAsyncThunk(
   "users/getUsersFromSupabase",
   async () => {
-    const { data, error } = await supabase.auth.admin.getUserById("c5a74156-56d5-4f02-9594-00293cbb9fcc");
+    const { data, error } = await supabase.auth.admin.listUsers();
 
     if (error) throw error;
-    return data.users; // assuming 'data' has a 'users' property that is an array
+    return data.users;
   }
 );
 

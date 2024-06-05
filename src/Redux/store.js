@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import postReducer from "./store/Posts";
-import servicesReducer from "./store/Services";
 import commentsReducer from "./store/Comments";
+import servicesReducer from "./store/Services";
 import authReducer from "./store/authSlice";
 import userQuestionsReducer from "./store/UserQuestions";
 import userReducer from "./store/userSlice";
