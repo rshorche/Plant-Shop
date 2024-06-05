@@ -29,22 +29,6 @@ export default defineConfig({
               .toString();
           }
         },
-        vendor: [
-          "@ckeditor/ckeditor5-build-classic",
-          "@ckeditor/ckeditor5-react",
-          "@reduxjs/toolkit",
-          "@supabase/auth-ui-react",
-          "@supabase/auth-ui-shared",
-          "@supabase/supabase-js",
-          "react",
-          "react-dom",
-          "react-hook-form",
-          "react-icons",
-          "react-redux",
-          "react-router-dom",
-          "redux",
-          "swiper",
-        ],
       },
     },
     // تنظیم برای محدودیت اندازه chunk
