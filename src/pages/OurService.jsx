@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import Path from "../components/Path/Path";
-import { getServicesFromSupabase } from "../Redux/store/Services";
+import { getServicesFromSupabase } from "../Redux/store/services";
 import { useEffect } from "react";
 import ServiceBox from "../components/ServiceBox/ServiceBox";
 
