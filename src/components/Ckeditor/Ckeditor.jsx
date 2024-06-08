@@ -2,6 +2,7 @@ import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import MyUploadAdapter from "../../components/UploadAdapter/UploadAdapter";
 import supabase from "../../supabase";
+import React from "react";
 
 const Ckeditor = ({ value, setValue }) => {
   const editorConfiguration = {
