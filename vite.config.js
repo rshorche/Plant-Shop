@@ -20,9 +20,11 @@ export default defineConfig({
         entryFileNames: 'assets/js/[name]-[hash].js',
         // تنظیمات جداسازی chunks
         manualChunks(id) {
-          if (id.includes('node_modules')) {
-            return id.split('node_modules/')[1].split('/')[0];
-          }
+                        if (id.includes('commonjsHelpers')) return 'commonjsHelpers'
+                        if (id.includes('node_modules')) {
+                            return id.toString().split('node_modules/')[1].split('/')[0].toString();
+                        }
+                    }
         },
       },
     },
