@@ -1,6 +1,6 @@
 // src/pages/Cms/BlogPostEditor.jsx
 import { useState } from "react";
-import Ckeditor from "../../components/Ckeditor/Ckeditor";
+import TinyMCE from "../../components/TinyMCE/TinyMCE";
 import Uploader from "../../components/Uploader/Uploader";
 import { useForm } from "react-hook-form";
 import supabase from "../../supabase";
@@ -122,7 +122,7 @@ export default function BlogPostEditor() {
         </div>
 
         <div className="w-full flex flex-col m-4">
-          <Ckeditor value={articleBody} setValue={setArticleBody} />
+          <TinyMCE value={articleBody} setValue={setArticleBody} />
         </div>
 
         <div className="flex flex-col">

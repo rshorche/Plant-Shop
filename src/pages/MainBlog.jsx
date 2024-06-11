@@ -88,7 +88,7 @@ export default function MainBlog() {
           شما کمک کنند فضاهای داخلی و خارجی خود را زنده کنید.
         </p>
         <div className="flex justify-center items-center gap-4 flex-wrap  mt-5">
-          {posts.map((post) => (
+          {posts.slice(0, 3).map((post) => (
             <BlogPostBox key={post.id} {...post} />
           ))}
         </div>

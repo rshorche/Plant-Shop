@@ -281,7 +281,7 @@ export default function Home() {
         {/* bottom */}
         <div className="mt-12 text-center">
           <div className="flex flex-wrap justify-between gap-10 text-right">
-            {posts.map((post) => (
+            {posts.slice(0, 3).map((post) => (
               <BlogPostBox key={post.id} {...post} />
             ))}
           </div>
