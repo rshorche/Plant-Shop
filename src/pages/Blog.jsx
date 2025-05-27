@@ -50,7 +50,7 @@ export default function Blog() {
         <div className="flex lg:justify-center flex-wrap  gap-8 mt-16">
           <div>
             <img
-              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Blog/Blog_blog1.png"
+              src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Blog/Blog_blog1.png"
               alt=""
             />
           </div>
@@ -78,7 +78,7 @@ export default function Blog() {
 
             <div className="flex items-center gap-2">
               <img
-                src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Users/Users_user2.jpeg"
+                src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Users/Users_user2.jpeg"
                 alt=""
                 className="w-12 h-12 rounded-full"
               />

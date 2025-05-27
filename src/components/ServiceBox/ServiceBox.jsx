@@ -9,7 +9,7 @@ export default function ServiceBox({ title, description, selected, id }) {
         selected ? "bg-green text-white" : "bg-cream text-white "
       }`}>
       <img
-        src={`https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/${
+        src={`https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/other/${
           selected ? "leaves_1.png" : "leaves_2.png"
         }`}
         alt=""

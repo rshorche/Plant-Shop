@@ -30,11 +30,11 @@ export default function BlogPostEditor() {
     const article = {
       author: datas.author,
       title: datas.title,
-      cover: `https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/${cover}`,
+      cover: `https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/${cover}`,
       description: datas.description,
       articleBody: articleBody,
       author_Photo:
-        "https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Users/Users_user5.jpeg",
+        "https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Users/Users_user5.jpeg",
       created_at: formattedDate,
       category: datas.category,
     };

@@ -8,14 +8,14 @@ import { FaSignOutAlt } from "react-icons/fa";
 
 export default function SideBar() {
   const logOut = () => {
-    localStorage.removeItem("sb-qsuxfyptieudendefeog-auth-token");
+    localStorage.removeItem("sb-pikczwjotvdrlpersqnz-auth-token");
   };
   return (
     <div className=" bg-white text-gray-500 shadow-md text-lg sm:text-base">
       <div className="flex flex-col  px-5 py-5 *:py-2 *:sm:pr-5 *:sm:w-44 *:md:w-56 *:flex *:items-center *:gap-2">
         <div className="mb-10">
           <img
-            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
+            src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
             alt=""
           />
           <p className="text-xl hidden sm:block">گلدون</p>

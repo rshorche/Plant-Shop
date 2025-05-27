@@ -12,7 +12,7 @@ export default function TeamBox(teamDateals) {
       </div>
       <div className="relative max-w-md pt-14">
         <img
-          src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/quote.png"
+          src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/other/quote.png"
           alt=""
           className="absolute top-0 "
         />

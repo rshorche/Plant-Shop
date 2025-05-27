@@ -60,17 +60,17 @@ export default function MainBlog() {
           <span>اشتراک گذاری</span>
           <div className="flex gap-2 mt-2">
             <img
-              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Instagram.png"
+              src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Social/Social_Instagram.png"
               alt=""
               className="w-9 h-9"
             />
             <img
-              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Facebook.png"
+              src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Social/Social_Facebook.png"
               alt=""
               className="w-9 h-9"
             />
             <img
-              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Twitter.png"
+              src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Social/Social_Twitter.png"
               alt=""
               className="w-9 h-9"
             />

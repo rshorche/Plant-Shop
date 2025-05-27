@@ -21,12 +21,12 @@ export default function CustomerComments() {
       {/* top */}
       <div>
         <img
-          src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/Branch.png"
+          src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/other/Branch.png"
           alt=""
           className="absolute -top-20 right-0 md:-right-14 -z-10"
         />
         <img
-          src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/other/Branch-l.png"
+          src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/other/Branch-l.png"
           alt=""
           className="absolute -top-20 left-0 md:-left-14 -z-10"
         />
@@ -54,7 +54,7 @@ export default function CustomerComments() {
                   {/* right */}
                   <div className="flex flex-col justify-center items-center sm:m-10">
                     <img
-                      src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/home_4.png"
+                      src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Home/home_4.png"
                       alt=""
                       className="absolute -z-10 md:max-w-md "
                     />
@@ -72,7 +72,7 @@ export default function CustomerComments() {
                   {/* left */}
                   <div>
                     <img
-                      src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Home/homeVideo2.png"
+                      src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Home/homeVideo2.png"
                       alt=""
                     />
                   </div>

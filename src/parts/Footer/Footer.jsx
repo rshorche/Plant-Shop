@@ -10,7 +10,7 @@ export default function Footer() {
           to={"/"}
           className="flex items-center gap-2 text-black font-bold text-sm md:text-base">
           <img
-            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
+            src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Logo/Logo_Logo.png"
             alt="logo"
           />
           گلدون
@@ -23,15 +23,15 @@ export default function Footer() {
         {/* Social */}
         <div className="flex gap-3">
           <img
-            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Twitter.png"
+            src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Social/Social_Twitter.png"
             alt=""
           />
           <img
-            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Facebook.png"
+            src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Social/Social_Facebook.png"
             alt=""
           />
           <img
-            src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Social/Social_Instagram.png"
+            src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Social/Social_Instagram.png"
             alt=""
           />
         </div>
@@ -85,7 +85,7 @@ export default function Footer() {
         <ul className="*:flex *:items-center *:gap-2 *:mt-6">
           <li>
             <img
-              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_map.png"
+              src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_map.png"
               alt="نقشه"
             />
             <p className="max-w-48">
@@ -94,14 +94,14 @@ export default function Footer() {
           </li>
           <li>
             <img
-              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_email.png?t=2024-06-02T06%3A36%3A12.055Z"
+              src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_email.png?t=2024-06-02T06%3A36%3A12.055Z"
               alt="ایمیل"
             />
             <p>rshorche@gmai.com</p>
           </li>
           <li>
             <img
-              src="https://qsuxfyptieudendefeog.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_call.png"
+              src="https://pikczwjotvdrlpersqnz.supabase.co/storage/v1/object/public/images/Contact-us/Contact-us_call.png"
               alt="تماس"
             />
             <p>0937-745-7370</p>
