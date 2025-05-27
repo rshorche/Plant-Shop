@@ -12,7 +12,6 @@ export default function BlogPostBox({
   created_at,
   id,
 }) {
-  console.log(author_Photo);
   return (
     <div className="max-w-80">
       <img src={`${cover}`} alt={title} />
