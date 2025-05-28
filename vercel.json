@@ -9,8 +9,9 @@
     }
   ],
   "routes": [
-    { "src": "/_vercel/static/(.*)", "dest": "/_vercel/static/$1" },
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }
